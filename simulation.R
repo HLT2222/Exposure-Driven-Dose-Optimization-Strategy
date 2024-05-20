@@ -1,4 +1,3 @@
-# Heling Tong 1/30/2024
 # This is a script for simulation study
 # rm(list = ls())
 
@@ -526,34 +525,5 @@ full_model <- function (PFIM.directory,
   )
   
 }
-
-
-# full_model_out <- full_model(PFIM.directory = "C:/Users/hlton/OneDrive/Desktop/PKPD/code/Tong/PFIM4.0",
-#                              Func.directory = "C:/Users/hlton/OneDrive/Desktop/PKPD/code/Tong",
-#                              true.dose = seq(0.1, 0.9, 0.2),
-#                              cohort.size = 3,
-#                              cohort.num = 20, 
-#                              W = 0.6,
-#                              stop.freq = 6,
-#                              dose.skip = 1,
-#                              up.down.num = 4,
-#                              target.toxicity = 0.25,
-#                              target.efficacy = 0.1,
-#                              tox_cut_off = 0.90,
-#                              eff_cut_off = 0.90,
-#                              lower.sampling = 0,
-#                              upper.sampling = 20,
-#                              fixed.pkpara = c(0.5, 0.06),
-#                              var.comp.pkpara = c(0.004, 0.00005),
-#                              error.var.pkpara = 0.000225,
-#                              fixed.DLTpro = c(0.01, 0.03, 0.05, 0.06, 0.08),
-#                              fixed.PDmean = c(0.03, 0.08, 0.14, 0.18, 0.20),
-#                              var.comp.PDmean = 0.1,
-#                              start.dose = 1,
-#                              ini.pkpara = c(0.1, 0.005),
-#                              ini.varcomp = c(0.0007, 0.0000006),
-#                              ini.error.std = 0.002,
-#                              ntrial = 1,
-#                              seed = 6)
 
 
