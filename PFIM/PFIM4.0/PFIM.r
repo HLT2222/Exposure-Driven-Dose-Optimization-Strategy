@@ -15,8 +15,8 @@ options(expressions=10000,max.deparse.lines=10000,max.deparse.length=10000, depa
 if(!under.unix) windows.options(record=TRUE) 
 subjects<-NULL
 
-directory<-"/Users/helingtong/Dropbox/Mac/Desktop/Tong/PFIM4.0"
-directory.program<-"/Users/helingtong/Dropbox/Mac/Desktop/Tong/PFIM4.0/Program"
+directory<-"PFIM/PFIM4.0"
+directory.program<-"PFIM/PFIM4.0/Program"
 
 #############################
 
