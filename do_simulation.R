@@ -13,7 +13,7 @@ library(dplyr)
 
 rm(list = ls()) 
 
-setwd("/Users/helingtong/Dropbox/Mac/Desktop/Tong")
+setwd(" ")
 source('simple_simulation.r')
 source('simulation.r')
 
@@ -46,32 +46,8 @@ scenarios_list <- list(scenario_1 = list(fixed.DLTpro <- c(0.01, 0.03, 0.05, 0.0
                                          var.comp.PDmean <- 0.1))
 
 
-
-
-simple_model_out <- simple_model(SimFunc.directory = "/Users/helingtong/Dropbox/Mac/Desktop/Tong",
-                                 true.dose = seq(0.1, 0.9, 0.2),
-                                 cohort.size = 3,
-                                 cohort.num =20,
-                                 W = 0.6,
-                                 stop.freq = 6,
-                                 dose.skip = 1,
-                                  target.toxicity = 0.25,
-                                  target.efficacy = 0.1,
-                                  tox_cut_off = 0.90,
-                                  eff_cut_off = 0.90,
-                                  fixed.DLTpro = scenarios_list[["scenario_9"]][[1]],
-                                  fixed.PDmean = scenarios_list[["scenario_9"]][[2]],
-                                  var.comp.PDmean = scenarios_list[["scenario_9"]][[3]],
-                                  start.dose = 1,
-                                  ntrial = 1000,
-                                  seed = 12345)
-
-setwd("/Users/helingtong/Dropbox/Mac/Desktop/Tong/result/simple_model")
-save(simple_model_out, file = "9.RData")
-# load("9.RData")
-
-full_model_out <- full_model(PFIM.directory = "/Users/helingtong/Dropbox/Mac/Desktop/Tong/PFIM4.0",
-                             Func.directory = "/Users/helingtong/Dropbox/Mac/Desktop/Tong",
+model_out <- full_model(PFIM.directory = "PFIM/PFIM4.0",
+                             Func.directory = " ",
                              true.dose = seq(0.1, 0.9, 0.2),
                              cohort.size = 3,
                              cohort.num = 20,
@@ -99,7 +75,5 @@ full_model_out <- full_model(PFIM.directory = "/Users/helingtong/Dropbox/Mac/Des
                              seed = 12345)
 
 
-setwd("/Users/helingtong/Dropbox/Mac/Desktop/Tong/result/n")
-save(full_model_out, file = "1/8_50.RData")
 
 
